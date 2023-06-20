@@ -1,0 +1,89 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/quiz2.css">
+    <script src="js/sessao.js"></script>
+
+</head>
+<body onload="validarSessao()">
+
+    <div class="header">
+        <div class="container">
+            <ul class="navBar">
+                <li><a class="navbar-link" href="pesquisar.html"><img class="imagem-lupa" src="imgs/pesquisar.png"></a>
+                </li>
+                <!-- <li><a href="">Sobre Nós</a></li> -->
+                <li><a class="navbar-link" href="aulas.html">Aulas</a></li>
+                <li><a class="navbar-link" href="aulas.html">Pesquisa</a></li>
+                <li><a class="navbar-link" href="./index.html">
+                    <h1 class="titulo"><img src="imgs/logotipo.png"></h1>
+                </a></li>
+                <li><a class="navbar-link" href="quiz.html">Quiz</a></li>
+                <li><a class="navbar-link" href="ranking.html">Ranking</a></li>
+                <li><a href="login.html" onclick="sair()"><img src="imgs/sair.png"  alt="sair"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="banner quiz">
+        <main>
+            <section class="about-section">
+                <h2>Quizes de Habilidade</h2>
+              <div class="text"  style="display: flex; justify-content: space-between;">
+                    <div class="quiz-entry" style="margin-right: 60px;">
+                        <a><div id="quiz1" class="titulo-bonito">Quiz Iniciante</div></a>
+                        <p>Teste seu conhecimento</p>
+                        <img src="imgs/peca-de-xadrez.png">
+                        <button class="botao-entrada" onclick="trocarParaQuizIniciante()">Iniciar Quiz</button>
+                      </div>
+                      <div class="quiz-entry" style="margin-right: 60px;">
+                        <a><div id="quiz1" class="titulo-bonito">Quiz Intermediario</div></a>
+                        <p>Teste seu conhecimento</p>
+                        <img src="imgs/torre-eiffel.png">
+                        <button class="botao-entrada" onclick="trocarParaQuizIntermediario()">Iniciar Quiz</button>
+                      </div>
+                      <div class="quiz-entry" style="margin-right: 60px;">
+                        <a><div id="quiz1" class="titulo-bonito">Quiz Avançado</div></a>
+                        <p>Teste seu conhecimento</p>
+                        <img src="imgs/coroa.png">
+                        <button class="botao-entrada" onclick="trocarParaQuizAvancado()">Iniciar Quiz</button>
+                      </div>
+                
+              </div>
+            </section>
+          </main>
+
+    </div>
+
+    <div class="banner">
+
+    </div>
+
+    <div class="footer">
+        <div class="container">
+          <h4> Copyright by BoosChess &copy; 2023</h4>
+          <span class="version">v1.0.0</span>
+        </div>
+    </div>
+    
+</body>
+</html>
+</body>
+</html>
+<script>
+    function trocarParaQuizIniciante(){
+        window.location.href="quizIniciante.html"
+    }
+
+    function trocarParaQuizIntermediario(){
+        window.location.href="quizIntermediario.html"
+    }
+
+    function trocarParaQuizAvancado(){
+        window.location.href="quizAvancado.html"
+    }
+</script>

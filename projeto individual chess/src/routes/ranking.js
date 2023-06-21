@@ -6,3 +6,5 @@ var rankingController = require("../controllers/rankingController");
 router.get("/", function (req, res) {
     rankingController.listar(req, res);
 });
+
+module.exports = router;

@@ -89,12 +89,35 @@
                     }
 
                     for(var w = 0 ; w < json.length; w++){
-                        jogadores.innerHTML += `<div class="jogador">
+                        if(w == 0){
+                            jogadores.innerHTML += `<div class="jogador">
+                    <div id="div_classificacao" class="classificacao jogador1">${w + 1}º</div>
+                    <img src="imgs/usuario-icon.png" class="imagem-usuario">
+                    <div id="div_nome" class="nome">${json[w].username}</div>
+                    <div id="div_nome" class="porcentagem-acertos">${json[w].porcentagem.toFixed(2) * 100}%</div>
+                 </div>`
+                        } else if(w == 1){
+                            jogadores.innerHTML += `<div class="jogador">
+                    <div id="div_classificacao" class="classificacao jogador2">${w + 1}º</div>
+                    <img src="imgs/usuario-icon.png" class="imagem-usuario">
+                    <div id="div_nome" class="nome">${json[w].username}</div>
+                    <div id="div_nome" class="porcentagem-acertos">${json[w].porcentagem.toFixed(2) * 100}%</div>
+                 </div>`
+                        } else if(w == 2){
+                            jogadores.innerHTML += `<div class="jogador">
+                    <div id="div_classificacao" class="classificacao jogador3">${w + 1}º</div>
+                    <img src="imgs/usuario-icon.png" class="imagem-usuario">
+                    <div id="div_nome" class="nome">${json[w].username}</div>
+                    <div id="div_nome" class="porcentagem-acertos">${json[w].porcentagem.toFixed(2) * 100}%</div>
+                 </div>`
+                        } else {
+                            jogadores.innerHTML += `<div class="jogador">
                     <div id="div_classificacao" class="classificacao">${w + 2}º</div>
                     <img src="imgs/usuario-icon.png" class="imagem-usuario">
                     <div id="div_nome" class="nome">${json[w].username}</div>
                     <div id="div_nome" class="porcentagem-acertos">${json[w].porcentagem.toFixed(2) * 100}%</div>
                  </div>`
+                        }
                     }
                     // var bottom = 140;
 

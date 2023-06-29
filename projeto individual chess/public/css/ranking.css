@@ -21,6 +21,19 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+.jogador1{
+ color: gold;
+}
+
+.jogador2{
+  color: rgba(133, 129, 129, 0.842);
+}
+
+.jogador3{
+color: rgb(190, 60, 27);
+}
+
+
 .imagem-usuario{
     width: 32px;
     height: 32px;

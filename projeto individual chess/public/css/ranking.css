@@ -7,6 +7,7 @@
 }
 
 .jogador{
+    margin-top: 10px;
     text-align: center;
     padding: 20px;
     background-color: rgb(215, 215, 215);
@@ -28,6 +29,13 @@
 
 .nome{  
     width: 200px;
+    height: 70px;
+    margin-top: 18px;
+    font-size: 32px;
+}
+
+.porcentagem-acertos{  
+    width: 400px;
     height: 70px;
     margin-top: 18px;
     font-size: 32px;
